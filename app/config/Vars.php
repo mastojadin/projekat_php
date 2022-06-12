@@ -20,11 +20,11 @@ class Vars {
         $this->vars['api_s']['actions'] = ['add', 'update', 'delete', 'list', 'search'];
         $this->vars['api_s']['size'] = count($this->vars['api_s']);
 
-        $this->vars['db']['host'] = '';
-        $this->vars['db']['port'] = '';
+        $this->vars['db']['host'] = 'localhost';
+        $this->vars['db']['port'] = '3306';
         $this->vars['db']['username'] = 'root';
         $this->vars['db']['password'] = '';
-        $this->vars['db']['db_name'] = '';
+        $this->vars['db']['db_name'] = 'projekat';
         $this->vars['db']['size'] = count($this->vars['db']);
     }
 

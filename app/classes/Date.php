@@ -9,34 +9,30 @@ class Date {
     {
         $this->query_string = $query_string;
         $this->post = $post;
-
-        $this->to_return = [];
-        $this->tto_return['data'] = '';
-        $this->tto_return['error'] = '';
     }
     
-    public function add() :string
+    public function add() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function update() :string
+    public function update() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function delete() :string
+    public function delete() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function list()
+    public function list() :int
     {
-        return json_encode($this->to_return);
+        return 1;
     }
 
-    public function search()
+    public function search() :int
     {
-        return json_encode($this->to_return);
+        return 1;
     }
 }

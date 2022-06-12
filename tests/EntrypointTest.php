@@ -127,6 +127,6 @@ final class EntrypointTest extends TestCase {
         $query_string = '';
         $tmp_post = [];
         $entrypoint = new Entrypoint($uri, $query_string, $tmp_post);
-        $this->assertIsString($entrypoint->call_needed());
+        $this->assertIsArray($entrypoint->call_needed());
     }
 }

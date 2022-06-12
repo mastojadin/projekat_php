@@ -9,34 +9,30 @@ class My_data {
     {
         $this->query_string = $query_string;
         $this->post = $post;
-
-        $this->to_return = [];
-        $this->to_return['data'] = '';
-        $this->to_return['error'] = '';
     }
 
-    public function add() :string
+    public function add() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function update() :string
+    public function update() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function delete() :string
+    public function delete() :int
     {
-        return json_encode(1);
+        return 1;
     }
 
-    public function list() :string
+    public function list() :array
     {
-        return json_encode($this->to_return);
+        return [];
     }
 
-    public function search() :string
+    public function search() :array
     {
-        return json_encode($this->to_return);
+        return [];
     }
 }

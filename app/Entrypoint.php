@@ -47,7 +47,7 @@ class Entrypoint {
         return $this->o_query_string === $string;
     }
 
-    public function call_needed()
+    public function call_needed() :int | array
     {
         $class_name = 'App\\classes\\' . ucfirst($this->uri_array[0]);
         $method_name = $this->uri_array[1];
