@@ -48,14 +48,14 @@ class DBHelper {
 
         $stmt->execute();
 
-        if (strpos( $query, 'SELECT') === 0) {
+        if (strpos( $query, 'SELECT') !== false) {
             return $stmt->fetchAll();
-        } else if (strpos($query, 'INSERT') === 0) {
+        } else if (strpos($query, 'INSERT') !== false) {
             // return $this->conn->lastInsertId();
             return ['data inserted'];
-        } else if (strpos($query, 'UPDATE') === 0) {
+        } else if (strpos($query, 'UPDATE') !== false) {
             return ['data updated'];
-        } else if (strpos($query, 'DELETE') === 0) {
+        } else if (strpos($query, 'DELETE') !== false) {
             return ['data deleted'];
         } else {
             throw new \Exception('No such query verb');
